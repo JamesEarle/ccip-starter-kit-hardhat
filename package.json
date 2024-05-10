@@ -1,6 +1,7 @@
 {
   "name": "ccip-starter-kit-hardhat",
   "scripts": {
+    "compile": "hardhat compile",
     "generateTypes": "typechain --target ethers-v5 --out-dir typechain-types './abi/*.json'"
   },
   "devDependencies": {
@@ -10,5 +11,8 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "ethers": "^5.7.2",
     "hardhat": "^2.14.1"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5"
   }
 }

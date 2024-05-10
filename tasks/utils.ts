@@ -7,8 +7,8 @@ export const getProviderRpcUrl = (network: string) => {
         case "ethereumSepolia":
             rpcUrl = process.env.ETHEREUM_SEPOLIA_RPC_URL;
             break;
-        case "optimismGoerli":
-            rpcUrl = process.env.OPTIMISM_GOERLI_RPC_URL;
+        case "optimismSepolia":
+            rpcUrl = process.env.OPTIMISM_SEPOLIA_RPC_URL;
             break;
         case "arbitrumSepolia":
             rpcUrl = process.env.ARBITRUM_SEPOLIA_RPC_URL;
@@ -53,6 +53,8 @@ export const getRouterConfig = (network: string) => {
     switch (network) {
         case "ethereumSepolia":
             return routerConfig.ethereumSepolia;
+        case "optimismSepolia":
+            return routerConfig.optimismSepolia;
         case "optimismGoerli":
             return routerConfig.optimismGoerli;
         case "arbitrumSepolia":

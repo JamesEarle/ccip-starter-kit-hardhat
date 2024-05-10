@@ -60,6 +60,11 @@ export const routerConfig = {
         chainSelector: `16015286601757825753`,
         feeTokens: [LINK_ADDRESSES[`ethereumSepolia`], `0x097D90c9d3E0B50Ca60e1ae45F6A81010f9FB534`]
     },
+    optimismSepolia: {
+      address: "0x114A20A10b43D4115e5aeef7345a1A71d2a60C57",
+      chainSelector: `5224473277236331295`,
+      feeTokens: ["0xE4aB69C077896252FAFBD49EFD26B5D171A32410", "0x4200000000000000000000000000000000000006"]
+    },
     optimismGoerli: {
         address: `0xcc5a0B910D9E9504A7561934bed294c51285a78D`,
         chainSelector: `2664363617261496610`,
